@@ -1,4 +1,5 @@
 package ru.netology.radio;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -13,6 +14,7 @@ public class RadioTest {
         int actual = station.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldNextStation() {
         Radio station = new Radio();
@@ -24,6 +26,7 @@ public class RadioTest {
         int actual = station.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldPrevStationInBorder() {
         Radio station = new Radio();
@@ -35,6 +38,7 @@ public class RadioTest {
         int actual = station.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldPrevStation() {
         Radio station = new Radio();
@@ -46,6 +50,7 @@ public class RadioTest {
         int actual = station.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldStationAboveMax() {
         Radio station = new Radio();
@@ -57,6 +62,7 @@ public class RadioTest {
         int actual = station.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldStationBelowMin() {
         Radio station = new Radio();
@@ -68,6 +74,7 @@ public class RadioTest {
         int actual = station.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetVolume() {
         Radio cond = new Radio();
@@ -79,6 +86,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetVolumeAboveMax() {
         Radio cond = new Radio();
@@ -90,6 +98,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetVolumeBelowMin() {
         Radio cond = new Radio();
@@ -101,6 +110,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldIncreaseVolume() {
         Radio cond = new Radio();
@@ -113,6 +123,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldDecreaseVolume() {
         Radio cond = new Radio();
@@ -125,6 +136,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldIncreaseVolumeAboveMax() {
         Radio cond = new Radio();
@@ -137,6 +149,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldDecreaseVolumeAboveMin() {
         Radio cond = new Radio();
@@ -149,6 +162,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetToMaxVolume() {
         Radio cond = new Radio();
