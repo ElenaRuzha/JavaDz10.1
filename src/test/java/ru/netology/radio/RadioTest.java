@@ -13,6 +13,7 @@ public class RadioTest {
         Assertions.assertEquals(0, cond.getMinStation());
         Assertions.assertEquals(0, cond.getCurrentStation());
     }
+
     @Test
     public void shouldSetStation() {
         Radio station = new Radio();
