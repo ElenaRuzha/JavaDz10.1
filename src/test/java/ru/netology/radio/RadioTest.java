@@ -1,9 +1,19 @@
+
 package ru.netology.radio;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
+    @Test
+    public void shouldSizeStation() {
+        Radio cond = new Radio(10);
+
+        Assertions.assertEquals(9, cond.getMaxStation());
+        Assertions.assertEquals(0, cond.getMinStation());
+        Assertions.assertEquals(0, cond.getCurrentStation());
+    }
+
     @Test
     public void shouldSetStation() {
         Radio station = new Radio();
